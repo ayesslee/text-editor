@@ -2,24 +2,39 @@
 
 ## Description
 
-A text editor that is available for download and use offline.
+A text editor that is available for download and use offline. Allows the user to create notes and ocde snippets regardless of whether they're connected to the internet or not. This allows the notes and snippets to be accessed at any time.
 
 
 ## Installation
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+Install NPM packages:
+
+    npm install
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+Visit the deployed application here: https://pacific-ocean-01347.herokuapp.com/
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
+## Screenshot
 
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+![screenshot of app](./images/T0udywN.png)
 
+## Technologies Used
+
+    * Express
+
+    * IndexedDB
+
+    * service worker
+
+    * idb
+
+    * Webpacks
+
+    * Babel
+
+    * heroku
 
 ## License
 
-MIT License
+This project is under the MIT License - see the LICENSE file for details
