@@ -23,7 +23,7 @@ module.exports = () => {
         template: './index.html',
         title: "JATE",
       }),
-      //custom service work from src-sw.js file
+      //custom service work from service worker
       new InjectManifest({
         swSrc: './src-sw.js',
         swDest: 'src-sw.js',
@@ -34,7 +34,7 @@ module.exports = () => {
         inject: true,
         name: 'Just Another Text Editor',
         short_name: 'JATE',
-        description: 'Text Editor using IndexedDB',
+        description: 'Take notes with Javascript text syntax highlighting!',
         background_color: '#225ca3',
         start_url: '/',
         publicPath: '/',
@@ -57,6 +57,7 @@ module.exports = () => {
         {
           test: /\.m?js$/,
           exclude: /node_modules/,
+          // babel-loader for ES6
           use: {
             loader: 'babel-loader',
             options: {

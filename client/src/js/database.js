@@ -17,12 +17,13 @@ export const putDb = async (content) => {
   const jateDb = await openDB('jate', 1);
   //create transaction with specific db
   const tx = jateDb.transaction('jate', 'readwrite');
+  // open desired object store
   const store = tx.objectStore('jate');
-  const request = store.put({ jate: content });
+  const request = store.put({ id: 1, value: content });
   // confirm request
   const result = await request;
   console.log('Data saved to database', result);
-};
+}
 
 export const getDb = async () => {
   // connect to database with version
@@ -35,6 +36,6 @@ export const getDb = async () => {
   // confirm request
   const result = await request;
   console.log(result);
-};
+}
 
 initdb();
